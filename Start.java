@@ -48,7 +48,7 @@ public class Start extends javax.swing.JFrame {
 
         jLabel2.setText("말 갯수    (2~5) : ");
 
-        jTextField2.setText("2");
+        jTextField2.setText("4");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -115,7 +115,7 @@ public class Start extends javax.swing.JFrame {
         mal=Integer.parseInt(jTextField2.getText());
         System.out.println(people + " " + mal);
         setVisible(false);
-        
+        View view = new View(people, mal);
     }                                        
 
     /**

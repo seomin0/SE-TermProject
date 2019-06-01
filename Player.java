@@ -9,15 +9,12 @@ package yutgame;
  *
  * @author aster
  */
-public class YutGame {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Start start = new Start();
-        
-    }
+public class Player {
+    int endMal;
+    int remindMal;
     
+    public Player(int x){
+        endMal = 0;
+        remindMal = x;
+    }
 }
